@@ -1,4 +1,4 @@
-\{
+{
   "name": "example-npm-travis",
   "version": "1.0.0",
   "description": "Example project for setting up CoPilot with an NPM project built with Travis CI",
