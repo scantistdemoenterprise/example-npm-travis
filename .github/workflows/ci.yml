@@ -21,6 +21,5 @@ jobs:
       - name: Upload to Scantist 
         env: # Setting the Token
           SCANTISTTOKEN: ${{secrets.SCANTISTTOKEN}}
-          SCANTIST_IMPORT_URL : "https://api-staging.scantist.io/ci-scan/"
         run: java -jar scantist-bom-detect.jar
 
