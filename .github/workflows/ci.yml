@@ -22,7 +22,7 @@ jobs:
       - run: npm install
       
       - name: Download Scantist-Bom-Detect
-        run: curl -s https://scripts.scantist.com/staging/scantist-bom-detect.jar --output scantist-bom-detect.jar
+        #run: curl -s https://scripts.scantist.com/staging/scantist-bom-detect.jar --output scantist-bom-detect.jar
       
       - name: Upload to Scantist 
         env: # Setting the Token
