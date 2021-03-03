@@ -16,14 +16,16 @@ jobs:
     runs-on: ubuntu-latest 
     steps:
       - name: checkout
-        #uses: actions/checkout@master
+        uses: actions/checkout@master
+     
+      - name: environment
         uses: actions/setup-node@v1
         with:
           node-version: 12
       - run: npm install
       
       - name: Download Scantist-Bom-Detect
-        #run: curl -s https://scripts.scantist.com/staging/scantist-bom-detect.jar --output scantist-bom-detect.jar
+        run: curl -s https://scripts.scantist.com/staging/scantist-bom-detect.jar --output scantist-bom-detect.jar
       
       - name: Upload to Scantist 
         env: # Setting the Token
